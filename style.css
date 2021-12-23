@@ -1,0 +1,451 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: linear-gradient(rgb(3, 148, 117),rgb(4, 37, 20));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/*                        -------------------START BUTTON------------------------- */
+#stBtn{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(2, 58, 161, 0.76);
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(rgb(0, 174, 255), rgb(91, 173, 80)) ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#stBtn:hover{
+    background: rgb(1, 204, 136);
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    transform: translateY(-0.4rem);
+    transition: transform 800ms;
+}
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 2s;
+}
+@media only screen and (max-width:360px){
+    #stBtn{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:240px){
+    #stBtn{
+        font-size: 10px;
+        padding: 15px;
+    }
+}
+/*                        -----------------------START BUTTON------------------------- */
+
+
+/*                        ------------------NEXT PAGE (INSTRUCTION)---------------------- */
+
+
+
+/*                        ----------------------INFO BOX WHOLE------------------------ */
+.info_box{
+    width: 45%;
+    padding: 30px 0;
+    border-radius: 5px;
+    background-image: url(./images/Instr.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1;
+    color: white;
+    font-family: monospace;
+    word-wrap: break-word;
+}
+.animate__animated.animate__fadeIn {
+    --animate-duration: 7s !important;
+}
+.info_box:hover{
+    background: rgb(1, 204, 136);
+    opacity: 1;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    cursor: pointer;
+}
+/*                        ----------------------INFO BOX WHOLE------------------------ */
+
+
+
+/*                          -------------------INFO HEADING----------------- */
+.info_box .info-title{
+    max-width: 100%;
+    text-align: center;
+    padding-bottom: 18px;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    border-radius: 5px 5px 0 0;
+    font-size: 28px;
+    font-weight: 540;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/*                          -------------------INFO HEADING----------------- */
+
+
+/*                           -------------------INFO LIST-------------------- */
+.info_box .info-list{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 19px;
+    font-weight: 500;
+    word-spacing: 4px;
+    line-height: 30px;
+}
+.info_box .info-list p span{
+    font-weight: 600;
+    color: #00ffd5;
+}
+/*                           -------------------INFO LIST-------------------- */
+
+
+/*                           -------------------BUTTONS--------------------- */
+
+.info_box .buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid rgb(0, 0, 0);
+}
+.info_box .buttons button{
+    width: 100px;
+    margin: 0 10px;
+    padding: 1.5px;
+    font-size: 19px;
+    color: rgba(2, 58, 161, 0.76);
+    font-family: monospace;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #007bff;
+    background: #1a1818;
+    background: linear-gradient(rgb(0, 174, 255), rgb(91, 173, 80)) ;
+    transition: all 0.3s ease;
+}
+.info_box .buttons button:hover{
+    background: rgb(1, 204, 136);
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    transform: translateY(-0.4rem);
+    transition: transform 800ms;
+}
+.animate__animated.animate__zoomIn {
+    --animate-duration: 1.5s !important;
+}
+
+/*                           -------------------BUTTONS--------------------- */
+
+/*                           -------------------MEDIAQUERY FOR INSTRUCTION PAGE------------------ */
+@media only screen and (max-width:852px){
+    .info_box .info-title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:698px){
+    .info_box .info-title{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:596px){
+    .info_box .info-title{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:442px){
+    .info_box .info-title{
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
+@media only screen and (max-width:383px){
+    .info_box .info-title{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:324px){
+    .info_box .info-title{
+        font-size: 11px;
+    }
+}
+
+
+
+@media only screen and (max-width:529px){
+    .info_box .buttons button{
+        width: 100%;
+        padding: 2px;
+        font-size: 11px;
+        font-weight: 800;
+        /* font-size: 12px; */
+    }
+}
+@media only screen and (max-width:358px){
+    .info_box .buttons button{
+        font-size: 9px;
+        margin-top: 5px;
+    }
+    .info_box .buttons{
+        flex-wrap: wrap;
+    }
+}
+
+
+/*                          ---------------------QUIZ------------------------- */
+
+
+.animate__animated.animate__zoomIn {
+    --animate-duration: 1.3s !important;
+}
+
+
+/*                          ---------------------QUIZ------------------------- */
+.container1{
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 1;
+    width: 80%;
+    padding: 1rem;
+}
+.container1:hover{
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    cursor: pointer;
+}
+.choice-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border: 0.2rem solid goldenrod;
+    border-radius: 10px;
+    color: white;
+    word-wrap: break-word;
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(0, 185, 0);
+    transform: translateY(-0.1rem);
+    transition: transform 500ms;
+    color: rgb(0, 185, 0);
+}
+.choice-prefix{
+    padding: .5rem 2.5rem;
+    color:rgb(0, 0, 0);
+}
+.choice-text{
+    padding: 0.3rem;
+}
+
+.correct{
+    background-color: #28a745;
+}
+.incorrect{
+    background-color: #dc3545;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progressbar{
+    width: 100%;
+    height: 2rem;
+    border: 0.3rem solid white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+#progressbarfull{
+    height: 1.5rem;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+#question{
+    margin-bottom: 1rem;
+    margin-left: 30px;
+}
+
+
+
+/*                           -------------------MEDIAQUERY FOR QUIZ PAGE------------------ */
+
+
+/*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ OPTIONS)-------------------- */
+@media only screen and (max-width:630px){
+    .choice-container{
+        font-size: 1.9rem;
+    }
+    .choice-prefix{
+        padding: .5rem 1.6rem;
+    }
+}
+@media only screen and (max-width:571px){
+    .choice-container{
+        font-size: 1.5rem;
+    }
+    .choice-prefix{
+        padding: .4rem 1.4rem;
+    }
+}
+@media only screen and (max-width:467px){
+    .choice-container{
+        font-size: 1.2rem;
+    }
+    .choice-prefix{
+        padding: .4rem 1rem;
+    }
+}
+@media only screen and (max-width:383px){
+    .choice-container{
+        font-size: 1rem;
+    }
+    .choice-prefix{
+        padding: .4rem 0.8rem;
+    }
+}
+@media only screen and (max-width:331px){
+    .choice-container{
+        font-size: 0.8rem;
+    }
+    .choice-prefix{
+        padding: .4rem 0.6rem;
+    }
+}
+/*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ OPTIONS)-------------------- */
+
+
+/*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ QUESTIONS)-------------------- */
+@media only screen and (max-width:1002px){
+    #question{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width:877px){
+    #question{
+        font-size: 1.1rem;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width:338px){
+    #question{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:313px){
+    #question{
+        font-size: 0.8rem;
+    }
+}
+/*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ QUESTIONS)-------------------- */
+
+
+/*                  --------------------------RESULT PAGE----------------------- */
+
+.animate__animated.animate__slideInLeft {
+    --animate-duration: 1.8s !important;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 20px 10px;
+    align-items: center;
+    background-image: url(./images/Champion.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: .7;
+    font-family: monospace;
+}
+.container:hover{
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    cursor: pointer;
+}
+#end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#end > img:hover{
+    box-shadow: 0 0.5rem 1.5rem 0 #E8A939 !important;
+}
+.endBtn{
+    flex-direction: row;
+    text-align: center;
+    width: 130px;
+    padding: 2px;
+    margin-top: 15px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: monospace;
+    color: rgba(2, 58, 161, 0.76);
+    background: linear-gradient(rgb(0, 174, 255), rgb(91, 173, 80)) ;
+    cursor: pointer;
+    transition: all 2s ease
+}
+.endBtn:hover{
+    background: rgb(1, 204, 136);
+    box-shadow: 0 0.5rem 1.5rem 0 #E8A939;
+    cursor: pointer;
+    transform: translateY(-0.3rem);
+    transition: transform 10000ms;
+}
+
+
+/*                  -----------------------MEDIAQUERY FOR RESULT PAGE(QUIZ QUESTIONS)-------------------- */
+@media only screen and (max-width:644px){
+    .resultTxt{
+        font-size: 100% !important;
+    }
+}
+@media only screen and (max-width:450px){
+    .resultTxt{
+        font-size: 90% !important;
+    }
+}
+@media only screen and (max-width:403px){
+    .resultTxt{
+        font-size: 75% !important;
+    }
+}
+/*                  -----------------------MEDIAQUERY FOR RESULT PAGE(QUIZ QUESTIONS)-------------------- */
