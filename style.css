@@ -37,7 +37,7 @@
 #stBtn:hover{
     background: rgb(1, 204, 136);
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
     transform: translateY(-0.4rem);
     transition: transform 800ms;
 }
@@ -64,14 +64,10 @@
 
 /*                        ----------------------INFO BOX WHOLE------------------------ */
 .info_box{
-    width: 45%;
+    width: 60%;
     padding: 30px 0;
-    border-radius: 5px;
-    background-image: url(./images/Instr.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    opacity: 1;
+    border-radius: 30px;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
     color: white;
     font-family: monospace;
     word-wrap: break-word;
@@ -80,9 +76,7 @@
     --animate-duration: 7s !important;
 }
 .info_box:hover{
-    background: rgb(1, 204, 136);
-    opacity: 1;
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
     cursor: pointer;
 }
 /*                        ----------------------INFO BOX WHOLE------------------------ */
@@ -96,7 +90,7 @@
     padding-bottom: 18px;
     border-bottom: 1.5px solid rgb(0, 0, 0);
     border-radius: 5px 5px 0 0;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 540;
     word-wrap: break-word;
     word-break: break-all;
@@ -112,14 +106,17 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    font-size: 19px;
-    font-weight: 500;
-    word-spacing: 4px;
-    line-height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.info_box .info-list p{
+    width: 100%;
 }
 .info_box .info-list p span{
     font-weight: 600;
-    color: #00ffd5;
+    color: rgb(255, 183, 0);
+    text-decoration: underline;
 }
 /*                           -------------------INFO LIST-------------------- */
 
@@ -138,7 +135,7 @@
     margin: 0 10px;
     padding: 1.5px;
     font-size: 19px;
-    color: rgba(2, 58, 161, 0.76);
+    color: white;
     font-family: monospace;
     cursor: pointer;
     border-radius: 8px;
@@ -150,7 +147,7 @@
 .info_box .buttons button:hover{
     background: rgb(1, 204, 136);
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
     transform: translateY(-0.4rem);
     transition: transform 800ms;
 }
@@ -161,30 +158,32 @@
 /*                           -------------------BUTTONS--------------------- */
 
 /*                           -------------------MEDIAQUERY FOR INSTRUCTION PAGE------------------ */
-@media only screen and (max-width:852px){
+
+
+/*                                  ----------------------------- */
+@media only screen and (max-width:1030px){
+    .info_box .info-title{
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width:840px){
+    .info_box .info-title{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:645px){
     .info_box .info-title{
         font-size: 25px;
     }
 }
-@media only screen and (max-width:698px){
+@media only screen and (max-width:545px){
     .info_box .info-title{
         font-size: 20px;
     }
 }
-@media only screen and (max-width:596px){
+@media only screen and (max-width:420px){
     .info_box .info-title{
-        font-size: 16px;
-    }
-}
-@media only screen and (max-width:442px){
-    .info_box .info-title{
-        font-size: 14px;
-        font-weight: 800;
-    }
-}
-@media only screen and (max-width:383px){
-    .info_box .info-title{
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 @media only screen and (max-width:324px){
@@ -192,7 +191,44 @@
         font-size: 11px;
     }
 }
+/*                                  ----------------------------- */
 
+
+/*                                  ----------------------------- */
+
+@media only screen and (max-width:950px){
+    .info_box .info-list{
+        font-size: 27px;
+    }
+}
+@media only screen and (max-width:853px){
+    .info_box .info-list{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:790px){
+    .info_box .info-list{
+        font-size: 20px;
+        line-height: 40px;
+    }
+}@media only screen and (max-width:632px){
+    .info_box .info-list{
+        font-size: 17px;
+        line-height: 30px;
+    }
+}
+@media only screen and (max-width:537px){
+    .info_box .info-list{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:474px){
+    .info_box .info-list{
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+/*                                  ----------------------------- */
 
 
 @media only screen and (max-width:529px){
@@ -226,15 +262,13 @@
 /*                          ---------------------QUIZ------------------------- */
 .container1{
     border-radius: 30px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    width: 80%;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    width: 60%;
     padding: 1rem;
 }
 .container1:hover{
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
     cursor: pointer;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 185, 0);
 }
 .choice-container{
     opacity: 1;
@@ -245,7 +279,7 @@
     margin-bottom: 0.5rem;
     border: 0.2rem solid rgb(255, 183, 0);
     border-radius: 10px;
-    color: wheat;
+    color: rgb(255, 183, 0);
     word-wrap: break-word;
 }
 .choice-container:hover{
@@ -273,7 +307,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    color: aquamarine;
+    color: rgb(255, 183, 0);
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 0.8rem;
 }
 .hud-prefix{
     text-align: center;
@@ -297,10 +334,9 @@
 }
 
 #question{
-    opacity: 1;
     margin-bottom: 1rem;
     margin-left: 30px;
-    color: wheat;
+    color: rgb(255, 183, 0);
 }
 
 
@@ -309,7 +345,7 @@
 
 
 /*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ OPTIONS)-------------------- */
-@media only screen and (max-width:630px){
+@media only screen and (max-width:832px){
     .choice-container{
         font-size: 1.9rem;
     }
@@ -317,7 +353,7 @@
         padding: .5rem 1.6rem;
     }
 }
-@media only screen and (max-width:571px){
+@media only screen and (max-width:748px){
     .choice-container{
         font-size: 1.5rem;
     }
@@ -325,7 +361,7 @@
         padding: .4rem 1.4rem;
     }
 }
-@media only screen and (max-width:467px){
+@media only screen and (max-width:616px){
     .choice-container{
         font-size: 1.2rem;
     }
@@ -333,7 +369,7 @@
         padding: .4rem 1rem;
     }
 }
-@media only screen and (max-width:383px){
+@media only screen and (max-width:504px){
     .choice-container{
         font-size: 1rem;
     }
@@ -341,7 +377,7 @@
         padding: .4rem 0.8rem;
     }
 }
-@media only screen and (max-width:331px){
+@media only screen and (max-width:430px){
     .choice-container{
         font-size: 0.8rem;
     }
@@ -353,25 +389,27 @@
 
 
 /*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ QUESTIONS)-------------------- */
-@media only screen and (max-width:1002px){
+@media only screen and (max-width:717px){
     #question{
         font-size: 1.3rem;
-    }
-}
-@media only screen and (max-width:877px){
-    #question{
-        font-size: 1.1rem;
         margin-left: 10px;
     }
 }
-@media only screen and (max-width:338px){
+@media only screen and (max-width:602px){
     #question{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-left: 8px;
     }
 }
-@media only screen and (max-width:313px){
+@media only screen and (max-width:517px){
     #question{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        margin-left: 6px;
+    }
+}
+@media only screen and (max-width:473px){
+    #question{
+        font-size: 0.85rem;
     }
 }
 /*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ QUESTIONS)-------------------- */
@@ -386,18 +424,15 @@
 .container{
     display: flex;
     justify-content: center;
-    width: 80%;
-    padding: 20px 10px;
     align-items: center;
-    background-image: url(./images/Champion.webp);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    opacity: .7;
+    width: 50%;
+    padding: 20px 10px;
     font-family: monospace;
+    border-radius: 30px;
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
 }
 .container:hover{
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
     cursor: pointer;
 }
 #end{
@@ -406,8 +441,8 @@
     align-items: center;
     width: 100%;
 }
-#end > img:hover{
-    box-shadow: 0 0.5rem 1.5rem 0 #E8A939 !important;
+#end > img{
+    margin-bottom: 8px;
 }
 .endBtn{
     flex-direction: row;
@@ -435,19 +470,50 @@
 
 
 /*                  -----------------------MEDIAQUERY FOR RESULT PAGE(QUIZ QUESTIONS)-------------------- */
-@media only screen and (max-width:644px){
+@media only screen and (max-width:1005px){
     .resultTxt{
-        font-size: 100% !important;
+        font-size: 130% !important;
+    }
+    #end > img{
+        width: 150px !important;
+        height: 90px !important;
     }
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:877px){
     .resultTxt{
-        font-size: 90% !important;
+        font-size: 110% !important;
+    }
+    #end > img{
+        width: 130px !important;
+        height: 80px !important;
     }
 }
-@media only screen and (max-width:403px){
+@media only screen and (max-width:748px){
+    .resultTxt{
+        font-size: 85% !important;
+    }
+    #end > img{
+        width: 90px !important;
+        height: 60px !important;
+    }
+}
+@media only screen and (max-width:587px){
+    .resultTxt{
+        font-size: 80% !important;
+    }
+    #end > img{
+        width: 80px !important;
+        height: 50px !important;
+    }
+}
+@media only screen and (max-width:555px){
     .resultTxt{
         font-size: 75% !important;
+    }
+}
+@media only screen and (max-width:555px){
+    .resultTxt{
+        font-size: 68% !important;
     }
 }
 /*                  -----------------------MEDIAQUERY FOR RESULT PAGE(QUIZ QUESTIONS)-------------------- */

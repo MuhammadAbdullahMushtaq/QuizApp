@@ -128,42 +128,6 @@ getnew = () => {
         localStorage.setItem('mostrecentscore', score);
         return window.location.assign("result.html");
     }
-//                      ---------------CHANGING IMAGES---------------
-var imgChange = document.getElementById("imgChange");
-var imgId = document.getElementById("question");
-
-if(imgId.innerHTML === questions[0].question){
-    imgChange.style.backgroundImage = "url('./images/img1.jpeg')";
-}
-else if(imgId.innerHTML === questions[1].question){
-    imgChange.style.backgroundImage = "url('./images/img2.jpg')";
-}
-else if(imgId.innerHTML === questions[2].question){
-    imgChange.style.backgroundImage = "url('./images/img3.jpg')";
-}
-else if(imgId.innerHTML === questions[3].question){
-    imgChange.style.backgroundImage = "url('./images/img4.jpg')";
-}
-else if(imgId.innerHTML === questions[4].question){
-    imgChange.style.backgroundImage = "url('./images/img5.png')";
-    imgChange.style.backgroundImage = "url('./images/img5.jpg')";
-}
-else if(imgId.innerHTML === questions[5].question){
-    imgChange.style.backgroundImage = "url('./images/img6.jpg')";
-}
-else if(imgId.innerHTML === questions[6].question){
-    imgChange.style.backgroundImage = "url('./images/img7.jpg')";
-}
-else if(imgId.innerHTML === questions[7].question){
-    imgChange.style.backgroundImage = "url('./images/img8.jpg')";
-}
-else if(imgId.innerHTML === questions[8].question){
-    imgChange.style.backgroundImage = "url('./images/img9.jpg')";
-}
-else{
-    imgChange.style.backgroundImage = "url(./images/img10.jpg)"
-}
-//                      ---------------CHANGING IMAGES---------------
 
     counter++;
     
