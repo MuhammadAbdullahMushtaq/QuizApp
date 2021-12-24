@@ -229,7 +229,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    opacity: 1;
     width: 80%;
     padding: 1rem;
 }
@@ -238,26 +237,26 @@
     cursor: pointer;
 }
 .choice-container{
+    opacity: 1;
     display: flex;
     align-items: center;
     width: 100%;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    border: 0.2rem solid goldenrod;
+    border: 0.2rem solid rgb(255, 183, 0);
     border-radius: 10px;
-    color: white;
+    color: wheat;
     word-wrap: break-word;
 }
 .choice-container:hover{
     cursor: pointer;
-    box-shadow: 0 0.5rem 1.5rem 0 rgb(0, 185, 0);
+    box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
     transform: translateY(-0.1rem);
     transition: transform 500ms;
-    color: rgb(0, 185, 0);
+    color: rgb(255, 183, 0);
 }
 .choice-prefix{
     padding: .5rem 2.5rem;
-    color:rgb(0, 0, 0);
 }
 .choice-text{
     padding: 0.3rem;
@@ -274,6 +273,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    color: aquamarine;
 }
 .hud-prefix{
     text-align: center;
@@ -297,8 +297,10 @@
 }
 
 #question{
+    opacity: 1;
     margin-bottom: 1rem;
     margin-left: 30px;
+    color: wheat;
 }
 
 

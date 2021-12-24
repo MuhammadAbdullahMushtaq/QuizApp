@@ -146,6 +146,7 @@ else if(imgId.innerHTML === questions[3].question){
 }
 else if(imgId.innerHTML === questions[4].question){
     imgChange.style.backgroundImage = "url('./images/img5.png')";
+    imgChange.style.backgroundImage = "url('./images/img5.jpg')";
 }
 else if(imgId.innerHTML === questions[5].question){
     imgChange.style.backgroundImage = "url('./images/img6.jpg')";
