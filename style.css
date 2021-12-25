@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-family: monospace;
     font-size: 25px;
     font-weight: 500;
     color: rgba(2, 58, 161, 0.76);
@@ -64,7 +65,7 @@
 
 /*                        ----------------------INFO BOX WHOLE------------------------ */
 .info_box{
-    width: 60%;
+    width: 85%;
     padding: 30px 0;
     border-radius: 30px;
     box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
@@ -160,76 +161,131 @@
 /*                           -------------------MEDIAQUERY FOR INSTRUCTION PAGE------------------ */
 
 
-/*                                  ----------------------------- */
+@media only screen and (max-width:1186px){
+    .info_box{
+        width: 90%;
+    }
+    .info_box .info-title{
+        font-size: 45px;
+    }
+    .info_box .info-list{
+        font-size: 29px;
+        line-height: 38px;
+    }
+}
 @media only screen and (max-width:1030px){
+    .info_box .info-title{
+        font-size: 42px;
+    }
+}
+@media only screen and (max-width:1004px){
+    .info_box{
+        width: 90%;
+        padding: 25px 0;
+    }
     .info_box .info-title{
         font-size: 40px;
     }
+    .info_box .info-list{
+        font-size: 28px;
+        line-height: 36px;
+    }
 }
-@media only screen and (max-width:840px){
+@media only screen and (max-width:913px){
+    .info_box{
+        width: 95%;
+        padding: 22px 0;
+    }
+    .info_box .info-title{
+        font-size: 38px;
+    }
+    .info_box .info-list{
+        font-size: 27px;
+        line-height: 35px;
+    }
+}
+@media only screen and (max-width:906px){
+    .info_box .info-title{
+        font-size: 34px;
+    }
+    .info_box .info-list{
+        font-size: 28px;
+    }}
+@media only screen and (max-width:846px){
+    .info_box .info-list{
+        font-size: 24px;
+        line-height: 33px;
+    }
+}
+@media only screen and (max-width:755px){
+    .info_box {
+        width: 88%;
+    }
+    .info_box .info-list{
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:846px){
+    .info_box .info-list{
+        font-size: 21px;
+        line-height: 31px;
+    }
+}
+@media only screen and (max-width:665px){
+    .info_box {
+        width: 86%;
+    }
     .info_box .info-title{
         font-size: 30px;
     }
-}
-@media only screen and (max-width:645px){
-    .info_box .info-title{
-        font-size: 25px;
-    }
-}
-@media only screen and (max-width:545px){
-    .info_box .info-title{
+    .info_box .info-list{
         font-size: 20px;
     }
 }
-@media only screen and (max-width:420px){
+@media only screen and (max-width:597px){
+    .info_box{
+        width: 88%;
+    }
     .info_box .info-title{
+        font-size: 25px;
+    }
+    .info_box .info-list{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:525px){
+    .info_box{
+        width: 90%;
+    }
+    .info_box .info-title{
+        font-size: 20px;
+    }
+    .info_box .info-list{
         font-size: 15px;
-    }
-}
-@media only screen and (max-width:324px){
-    .info_box .info-title{
-        font-size: 11px;
-    }
-}
-/*                                  ----------------------------- */
-
-
-/*                                  ----------------------------- */
-
-@media only screen and (max-width:950px){
-    .info_box .info-list{
-        font-size: 27px;
-    }
-}
-@media only screen and (max-width:853px){
-    .info_box .info-list{
-        font-size: 25px;
-    }
-}
-@media only screen and (max-width:790px){
-    .info_box .info-list{
-        font-size: 20px;
-        line-height: 40px;
-    }
-}@media only screen and (max-width:632px){
-    .info_box .info-list{
-        font-size: 17px;
         line-height: 30px;
     }
 }
-@media only screen and (max-width:537px){
-    .info_box .info-list{
-        font-size: 15px;
+@media only screen and (max-width:438px){
+    .info_box{
+        width: 92%;
     }
-}
-@media only screen and (max-width:474px){
     .info_box .info-list{
         font-size: 13px;
         line-height: 25px;
     }
 }
-/*                                  ----------------------------- */
+@media only screen and (max-width:363px){
+    .info_box{
+        width: 94%;
+    }
+    .info_box .info-list{
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
 
+
+/*                          -----------------(INFO BOX BUTTONS)---------------- */
 
 @media only screen and (max-width:529px){
     .info_box .buttons button{
@@ -249,6 +305,7 @@
         flex-wrap: wrap;
     }
 }
+/*                          -----------------(INFO BOX BUTTONS)---------------- */
 
 
 /*                          ---------------------QUIZ------------------------- */
@@ -265,6 +322,7 @@
     box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
     width: 60%;
     padding: 1rem;
+    font-family: monospace;
 }
 .container1:hover{
     cursor: pointer;
@@ -318,6 +376,17 @@
 }
 .hud-main-text{
     text-align: center;
+}
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.timer h6{
+    padding: 5px;
+    font-family: monospace;
+    font-size: 1.5rem;
 }
 
 #progressbar{
@@ -376,6 +445,9 @@
     .choice-prefix{
         padding: .4rem 0.8rem;
     }
+    .resp{
+        font-size: 1.3rem !important;
+    }
 }
 @media only screen and (max-width:430px){
     .choice-container{
@@ -384,7 +456,33 @@
     .choice-prefix{
         padding: .4rem 0.6rem;
     }
+    .resp{
+        font-size: 1.1rem !important;
+    }
 }
+@media only screen and (max-width:370px){
+    .choice-container{
+        font-size: 0.6rem;
+    }
+    .choice-prefix{
+        padding: 0.3rem 0.5rem;
+    }
+    .resp{
+        font-size: 0.8rem !important;
+    }
+}
+@media only screen and (max-width:280px){
+    .choice-container{
+        font-size: 0.5rem;
+    }
+    .choice-prefix{
+        padding: 0.2rem 0.4rem;
+    }
+    .resp{
+        font-size: 0.6rem !important;
+    }
+}
+
 /*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ OPTIONS)-------------------- */
 
 
@@ -412,6 +510,11 @@
         font-size: 0.85rem;
     }
 }
+@media only screen and (max-width:380px){
+    #question{
+        font-size: 0.7rem;
+    }
+}
 /*                  -----------------------MEDIAQUERY FOR QUIZ PAGE(QUIZ QUESTIONS)-------------------- */
 
 
@@ -430,6 +533,7 @@
     font-family: monospace;
     border-radius: 30px;
     box-shadow: 0 0.5rem 1.5rem 0 rgb(211, 185, 185);
+    color: rgb(255, 185, 0);
 }
 .container:hover{
     box-shadow: 0 0.5rem 1.5rem 0 rgb(255, 183, 0);
@@ -465,7 +569,7 @@
     box-shadow: 0 0.5rem 1.5rem 0 #E8A939;
     cursor: pointer;
     transform: translateY(-0.3rem);
-    transition: transform 10000ms;
+    transition: transform 1000ms;
 }
 
 
@@ -478,6 +582,10 @@
         width: 150px !important;
         height: 90px !important;
     }
+    .endBtn{
+        width: 120px;
+        font-size: 17px;
+    }
 }
 @media only screen and (max-width:877px){
     .resultTxt{
@@ -486,6 +594,10 @@
     #end > img{
         width: 130px !important;
         height: 80px !important;
+    }
+    .endBtn{
+        width: 110px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width:748px){
@@ -496,6 +608,13 @@
         width: 90px !important;
         height: 60px !important;
     }
+    .endBtn{
+        width: 105px;
+        font-size: 13px;
+    }
+    #finalscore{
+        font-size: 1.5rem !important;
+    }
 }
 @media only screen and (max-width:587px){
     .resultTxt{
@@ -505,15 +624,46 @@
         width: 80px !important;
         height: 50px !important;
     }
+    .endBtn{
+        width: 90px;
+        font-size: 11px;
+    }
 }
 @media only screen and (max-width:555px){
     .resultTxt{
         font-size: 75% !important;
     }
+    #finalscore{
+        font-size: 1.3rem !important;
+    }
+    .endBtn{
+        width: 85px;
+        font-size: 10px;
+    }
 }
 @media only screen and (max-width:555px){
     .resultTxt{
         font-size: 68% !important;
+    }
+    #finalscore{
+        font-size: 1.1rem !important;
+    }
+}
+@media only screen and (max-width:478px){
+    .resultTxt{
+        font-size: 60% !important;
+    }
+}
+@media only screen and (max-width:426px){
+    .resultTxt{
+        font-size: 55% !important;
+    }
+    #finalscore{
+        font-size: 1rem !important;
+    }
+    .endBtn{
+        width: 75px;
+        font-size: 9px;
     }
 }
 /*                  -----------------------MEDIAQUERY FOR RESULT PAGE(QUIZ QUESTIONS)-------------------- */

@@ -147,6 +147,21 @@ getnew = () => {
 
     availablequestions.splice(questionindex,1);
     acceptingAnswers = true;
+
+
+
+var secTxt = document.getElementById("sec");
+var sec = 10;
+
+var interval = setInterval(function(){
+    sec-- ;
+    secTxt.innerHTML = sec;
+    if(sec <= 0){
+        getnew();
+        clearInterval(interval);
+        secTxt.innerHTML = "10";
+    }
+} , 1000);
 };
 
 choices.forEach(choice => {
@@ -168,6 +183,7 @@ choices.forEach(choice => {
 
         setTimeout(() => {
             selectedchoice.parentElement.classList.remove(classtoapply);
+            clearInterval(interval);
             getnew();
         }, 1000);
     });
